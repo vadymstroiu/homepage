@@ -66,46 +66,8 @@
                 </div>
             </div>
         </div>
-
-        <div style="text-align:center">
-            <h2>Portfolio &#128516;</h2>
-            <p>Click on the images below:</p>
-        </div>
-
-        <!-- The four columns -->
-        <div class="row">
-            <div class="column">
-                <img src="assets/portfolio/1.png" alt="Look at the kanban board" style="width:100%" onclick="showBigImage(this);">
-            </div>
-            <div class="column">
-                <img src="assets/portfolio/2.png" alt="Analyze" style="width:100%" onclick="showBigImage(this);">
-            </div>
-            <div class="column">
-                <img src="assets/portfolio/3.png" alt="Implement" style="width:100%" onclick="showBigImage(this);">
-            </div>
-            <div class="column">
-                <img src="assets/portfolio/4.png" alt="Done" style="width:100%" onclick="showBigImage(this);">
-            </div>
-        </div>
-
-        <div class="image-container">
-            <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
-            <img id="expandedImg" style="width:100%">
-            <div id="imgtext"></div>
-        </div>
     </div>
 </main>
-
-<script>
-    function showBigImage(imgs) {
-        console.log("Click")
-        let expandImg = document.getElementById("expandedImg");
-        let imgText = document.getElementById("imgtext");
-        expandImg.src = imgs.src;
-        imgText.innerHTML = imgs.alt;
-        expandImg.parentElement.style.display = "block";
-    }
-</script>
 
 </body>
 </html>
